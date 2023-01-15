@@ -494,13 +494,13 @@ footer .social a:hover {
         width: 180px;
     }
     .livros {
+        padding: 0 2rem;
         transition: transform 0.2s;
     }
 
     .livros:hover {
         transform: scale(1.1);
     }
-
 }
 
 /* extra large devices: 1024px */
@@ -610,10 +610,9 @@ footer .social a:hover {
     #books {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    #books h4 {
-        margin-bottom: 2rem;
-    }
+
     #books .livros img {
+
         width: 180px;
     }
     .livros {
