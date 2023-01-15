@@ -366,6 +366,14 @@ nav.show div.icon-close {
 
 #books h4 {
     margin-top: 5rem;
+    font-size: 1.5rem;
+    
+}
+
+#books .livros p {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--text-color);
 }
 
 /*=========== CONTACT =====================*/
@@ -469,7 +477,7 @@ footer .social a:hover {
     }
 
     .section {
-        padding: 10rem 0;
+        padding: 8rem 0;
     }
 
     .section header,
@@ -566,11 +574,27 @@ footer .social a:hover {
       margin-bottom: 2rem;
   }
     #books .livros img{
-        width: 250px;
+        width: 180px;
         
     }
     .livros {
-      padding: 3.625rem 2rem;
+      padding: 0 2rem;
+      transition: transform .2s;
+    }
+
+    .livros:hover{
+        transform: scale(1.1);
+    }
+
+    #books h4 {
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+    
+    #books .livros p {
+        text-decoration: none;
+        font-size: 1rem;
+        color: var(--text-color);
     }
 
     /* contact */
