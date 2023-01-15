@@ -326,6 +326,12 @@ nav.show div.icon-close {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
+
+#about span {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    font-weight: bold;
+}
 /*=========== SERVICES =====================*/
 .cards.grid {
     gap: 1.5rem;
@@ -357,6 +363,9 @@ nav.show div.icon-close {
 }
 
 /*=========== ROOMS =====================*/
+#rooms {
+    background: white;
+}
 
 /*=========== BOOKS =====================*/
 
@@ -367,7 +376,6 @@ nav.show div.icon-close {
 #books h4 {
     margin-top: 5rem;
     font-size: 1.5rem;
-    
 }
 
 #books .livros p {
@@ -377,6 +385,10 @@ nav.show div.icon-close {
 }
 
 /*=========== CONTACT =====================*/
+#contact {
+    background: white;
+}
+
 #contact .grid {
     gap: 4rem;
 }
@@ -467,8 +479,31 @@ footer .social a:hover {
     transform: translateY(0);
 }
 
-/* extra large devices: 1200 */
-@media (min-width: 1200px) {
+@media (min-width: 736px){
+    /* SERVICES */
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+    #books {
+        grid-template-columns: 1fr 1fr;
+    }
+    /* BOOKS */
+    #books .livros img {
+        margin-top: 1rem;
+        width: 120px;
+    }
+    .livros {
+        transition: transform 0.2s;
+    }
+
+    .livros:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+/* extra large devices: 1024px */
+@media (min-width: 1024px) {
     /* reusable classes*/
     .container {
         max-width: 1120px;
@@ -557,6 +592,8 @@ footer .social a:hover {
     .card {
         padding-left: 3rem;
         padding-right: 3rem;
+
+        transition: transform .2s;
     }
 
     .card:hover {
@@ -564,25 +601,26 @@ footer .social a:hover {
     }
 
     /* rooms */
-
+    #rooms {
+        padding: 5rem;
+    }
     /* books */
-    
+
     #books {
-      grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     #books h4 {
-      margin-bottom: 2rem;
-  }
-    #books .livros img{
+        margin-bottom: 2rem;
+    }
+    #books .livros img {
         width: 180px;
-        
     }
     .livros {
-      padding: 0 2rem;
-      transition: transform .2s;
+        padding: 0 2rem;
+        transition: transform 0.2s;
     }
 
-    .livros:hover{
+    .livros:hover {
         transform: scale(1.1);
     }
 
@@ -590,7 +628,7 @@ footer .social a:hover {
         margin-top: 2rem;
         font-size: 1rem;
     }
-    
+
     #books .livros p {
         text-decoration: none;
         font-size: 1rem;
@@ -601,6 +639,7 @@ footer .social a:hover {
     #contact .container {
         grid-auto-flow: column;
         align-items: center;
+        padding: 5rem;
     }
 
     #contact .text {
