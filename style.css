@@ -12,7 +12,7 @@ a {
     text-decoration: none;
 }
 img {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
@@ -376,12 +376,12 @@ nav.show div.icon-close {
 
 #books h4 {
     margin-top: 5rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 #books .livros p {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--text-color);
 }
 
