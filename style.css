@@ -68,6 +68,11 @@ body {
     gap: 0.5rem;
 }
 
+.button i {
+    font-size: 1.5rem;
+    margin-right: 0.625rem;
+}
+
 .button:hover {
     background: var(--base-color-alt);
 }
@@ -385,8 +390,22 @@ nav.show div.icon-close {
     color: var(--text-color);
 }
 
-/*=========== CONTACT =====================*/
+/*============= GROUP =====================*/
+#group h2 {
+    padding: 0 2rem;
+}
+#group .grid {
+    gap: 0;
+}
 
+#group p {
+    margin: 2rem 0;
+}
+
+/*=========== CONTACT =====================*/
+#contact {
+    background: white;
+}
 #contact .grid {
     gap: 4rem;
 }
@@ -395,7 +414,6 @@ nav.show div.icon-close {
     margin-bottom: 2rem;
 }
 
-#contact .button i,
 #contact ul li i {
     font-size: 1.5rem;
     margin-right: 0.625rem;
@@ -497,6 +515,37 @@ footer .social a:hover {
 
     .livros:hover {
         transform: scale(1.1);
+    }
+
+    /* group */
+    #group {
+        text-align: center;
+        padding: 2rem;
+    }
+    #group h2 {
+        margin-bottom: 4rem;
+    }
+
+    #group.section {
+        padding: 3.75rem;
+    }
+
+    #group .container {
+        grid-auto-flow: column;
+        align-items: center;
+    }
+
+    #group .text {
+        max-width: 25rem;
+    }
+
+    #group img {
+        width: 500px;
+    }
+
+    #group p {
+        margin: 0 0 2rem;
+        width: 400px;
     }
 }
 
@@ -632,6 +681,7 @@ footer .social a:hover {
     }
 
     /* contact */
+
     #contact .container {
         grid-auto-flow: column;
         align-items: center;
