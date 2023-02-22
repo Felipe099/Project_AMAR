@@ -516,7 +516,8 @@ footer .social a:hover {
     .livros:hover {
         transform: scale(1.1);
     }
-
+}
+@media (min-width: 1000px) {
     /* group */
     #group {
         text-align: center;
@@ -540,7 +541,7 @@ footer .social a:hover {
     }
 
     #group img {
-        width: 500px;
+        width: 400px;
     }
 
     #group p {
