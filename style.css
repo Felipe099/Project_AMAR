@@ -555,6 +555,7 @@ footer .social a:hover {
     #group .container {
         grid-auto-flow: column;
         align-items: center;
+        justify-content: space-around;
     }
 
     #group .text {
@@ -573,7 +574,7 @@ footer .social a:hover {
 }
 
 /* extra large devices: 1024px */
-@media (min-width: 1024px) {
+@media (min-width: 1000px) {
     /* reusable classes*/
     .container {
         max-width: 1120px;
@@ -654,6 +655,10 @@ footer .social a:hover {
         align-items: center;
     }
 
+    #about img {
+        width: 500px;
+    }
+
     /* services */
     .cards {
         grid-template-columns: 1fr 1fr 1fr;
@@ -702,6 +707,10 @@ footer .social a:hover {
         font-size: 1rem;
         color: var(--text-color);
     }
+    /* group */
+    #group {
+        margin-left: 5rem;
+    }
 
     /* group */
     #group .text {
@@ -734,3 +743,6 @@ footer .social a:hover {
         font-size: 2.25rem;
     }
 }
+
+
+
