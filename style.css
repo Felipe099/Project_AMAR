@@ -402,6 +402,27 @@ nav.show div.icon-close {
     margin: 2rem 0;
 }
 
+#group a {
+    background-color: var(--base-color);
+    color: var(--text-color-light);
+    height: 3.5rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 2rem;
+    border-radius: 0.25rem;
+    font: 500 1rem var(--body-font);
+    transition: background 0.3s;
+    gap: 0.5rem;
+}
+
+#group a:last-child {
+    margin-top: 10px;
+}
+
+#group .button:hover {
+    background: var(--base-color-alt);
+}
+
 /*=========== CONTACT =====================*/
 #contact {
     background: white;
@@ -537,11 +558,12 @@ footer .social a:hover {
     }
 
     #group .text {
-        max-width: 25rem;
+        max-width: 24rem;
     }
 
     #group img {
         width: 400px;
+        margin-top: -60px;
     }
 
     #group p {
@@ -681,6 +703,10 @@ footer .social a:hover {
         color: var(--text-color);
     }
 
+    /* group */
+    #group .text {
+        margin-left: 50px;
+    }
     /* contact */
 
     #contact .container {

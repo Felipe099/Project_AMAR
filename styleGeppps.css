@@ -1,0 +1,124 @@
+/*=========== RESET =====================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fffafa;
+}
+
+body {
+    font: 400 1rem 'Poppins', sans-serif;
+    color: #000;
+
+    background: linear-gradient(45deg, #3266a8 0%, #32a89e 100%);
+    -webkit-font-smoothing: antialiased;
+}
+
+/*=========== GEPPPS =====================*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 0 auto;
+}
+h3,
+h1 {
+    text-align: center;
+}
+.group,
+.group1 {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 0 auto;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+}
+
+.info span {
+    text-align: center;
+}
+
+.info h3 {
+    margin-top: 10px;
+}
+
+.info img {
+    width: 200px;
+    height: 200px;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+
+@media (min-width: 740px) {
+    body {
+        display: grid;
+        justify-content: center;
+        padding: 50px 15px;
+    }
+
+    .group1 {
+        display: grid;
+        justify-content: center;
+    }
+
+    .group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .text {
+        text-align: center;
+        margin: 25px 0 15px 0;
+    }
+
+    h3,
+    h1 {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1110px) {
+    body {
+        display: grid;
+        justify-content: center;
+        padding: 50px 15px;
+    }
+
+    .group1 {
+        display: grid;
+        justify-content: center;
+    }
+
+    .group {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .text {
+        text-align: center;
+        margin: 25px 0 15px 0;
+    }
+
+    h3,
+    h1 {
+        text-align: center;
+    }
+}
