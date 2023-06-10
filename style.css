@@ -367,6 +367,11 @@ nav.show div.icon-close {
     color: var(--text-color);
 }
 
+#services span {
+    color: #000;
+    font-weight: 500; 
+}
+
 /*=========== ROOMS =====================*/
 #rooms {
     background: white;
